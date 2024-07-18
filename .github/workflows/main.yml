@@ -31,8 +31,8 @@ jobs:
       - name: Generate website
         run: |
           haxe generate.hxml
-        env:
-          GHP_ROOT: ${{steps.pages_config.outputs.base_url}}
+        # env:
+        #   GHP_ROOT: ${{steps.pages_config.outputs.base_url}}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
